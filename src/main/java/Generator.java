@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.io.StringReader;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,17 +8,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-//import com.samskivert.mustache.Mustache;
-//import com.samskivert.mustache.Template;
-
 import com.github.mustachejava.DefaultMustacheFactory;
 import com.github.mustachejava.Mustache;
-import com.github.mustachejava.MustacheFactory;
 import com.github.mustachejava.TemplateFunction;
-import com.github.mustachejava.reflect.ReflectionObjectHandler;
 import com.github.mustachejava.util.DecoratedCollection;
 import com.google.common.base.Function;
 
+/**
+ * <p>Generator. </p>
+ *
+ * @author anavarro - May 12, 2013
+ *
+ */
 public class Generator {
 
     public static void main(String[] args) {

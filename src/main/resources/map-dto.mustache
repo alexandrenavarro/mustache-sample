@@ -1,0 +1,26 @@
+{{#class}}
+package {{package}};
+
+public final class HashMap{{name}}
+{{/class}}
+{
+
+{{#fields}}
+public {{type}} get{{name}}()
+{
+	return ({{type}}) this.get("{{#underscore}}{{name}}{{/underscore}}");
+}
+
+public void set{{name}}(final {{type}} a{{name}})
+{
+	if (a{{name}} != null) && !BLANK.equals(a{{name}})
+	{
+		this.put({{#underscore}}{{name}}{{/underscore}}, a{{name}});
+	}
+}
+
+{{/fields}}
+
+}
+
+
